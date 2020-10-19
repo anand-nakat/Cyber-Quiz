@@ -1,0 +1,39 @@
+main .result-container {
+  width: 40rem;
+  height: 35rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  color: #1e272e;
+  -webkit-box-shadow: 0 0 0.6rem 0.1rem black;
+          box-shadow: 0 0 0.6rem 0.1rem black;
+  border-radius: 2rem;
+}
+
+main .result-container .result-heading {
+  font-size: 3.2rem;
+  font-weight: 600;
+  color: #B33771;
+  border-bottom: .25rem solid #1e272e;
+}
+
+main .result-container .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .result-container .links .btn {
+  width: 15rem;
+  font-size: 1.8rem;
+}
+/*# sourceMappingURL=result.css.map */

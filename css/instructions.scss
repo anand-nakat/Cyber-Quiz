@@ -1,0 +1,144 @@
+
+@font-face {
+	font-family: 'Glyphicons Halflings';
+  	src: url('../fonts/glyphicons-halflings-regular.eot');
+	src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+  }
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Commissioner', sans-serif;
+    font-size: 2rem;
+}
+
+html{
+	font-size: 62.5%;
+}
+	
+.glyphicon {
+	position: relative;
+	top: 1px;
+	display: inline-block;
+	font-family: 'Glyphicons Halflings';
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.glyphicon-fire:before {
+	content: "\e104";
+}
+
+.navbar{
+    a{
+    font-size: 2rem;
+    color: #dcdde1 !important;
+
+        &:hover{
+            color: orangered !important;
+        }
+    }
+
+    .navbar-brand{
+        font-size: 3rem;
+        letter-spacing: .9rem;
+        color: yellowgreen !important;
+        transition: linear .3s all;
+
+        .glyphicon{
+            font-size: 3.1rem;
+        }
+        &:hover{
+            letter-spacing: 0rem;
+            color: orangered !important;
+        }
+    }
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+
+        .instruction-container{
+            width: 45rem;
+            margin-top: 7rem;
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            color: #1e272e;
+            box-shadow: 0 0 0.6rem 0.1rem black;
+        
+                .instruction-heading{
+                    font-size: 3.2rem;
+                    font-weight: 600;
+                    color: #B33771;
+                    border-bottom: .25rem solid #1e272e;
+                }
+
+                .test-details{
+                    display: flex;
+                    justify-content: space-between;
+                        h2{
+                            font-weight: 600;
+                            text-transform: capitalize;
+                        }
+                }
+
+                .instructions{
+                    h2{
+                        margin-bottom: 1rem;
+                    }
+                }
+                .form{
+                    display: flex;
+                    justify-content: space-evenly;
+                        .submit-btn{
+                            font-size: 1.8rem;
+                        }
+                }
+        }
+
+}
+
+@media(max-width: 998px)
+{
+	html
+	{
+		font-size: 58%;
+	}
+}
+
+@media(max-width: 768px)
+{
+	html
+	{
+		font-size: 55%;
+	}
+	
+}
+@media(max-width: 600px)
+{
+	html{
+		font-size: 50%;
+	}
+}
+@media(max-width: 450px)
+{
+	html{
+		font-size: 46%;
+	}
+}
+@media(max-width: 350px)
+{
+	html{
+		font-size: 42%;
+	}
+}

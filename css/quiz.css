@@ -1,0 +1,227 @@
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+
+@font-face {
+	font-family: 'Glyphicons Halflings';
+	src: url("../fonts/glyphicons-halflings-regular.eot");
+	src: url("../fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/glyphicons-halflings-regular.woff2") format("woff2"), url("../fonts/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
+  }
+  
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Commissioner', sans-serif;
+	font-size: 2rem;
+	}
+
+	html{
+		font-size: 62.5%;
+		scroll-behavior: smooth;
+	}
+
+	.glyphicon {
+		position: relative;
+		top: 1px;
+		display: inline-block;
+		font-family: 'Glyphicons Halflings';
+		font-style: normal;
+		font-weight: normal;
+		line-height: 1;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	  }
+	  
+	  .glyphicon-fire:before {
+		content: "\e104";
+	  }
+
+	.navbar{
+		width: 100%;
+		position: fixed;
+		background-color: rgba(0, 0, 0, 0.8);
+		color: whitesmoke;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 1rem 1rem;
+		padding-bottom: .5rem;
+		z-index: 2;
+	}
+
+	.navbar .nav-brand{
+		font-size: 3.2rem;
+        letter-spacing: .6rem;
+        color: yellowgreen !important;
+        transition: linear .3s all;
+	}
+
+	.navbar .nav-brand .glyphicon{
+		font-size: 3.3rem;
+	}
+
+
+  	.parent-container{
+  		background-color: #f5f6fa;
+  		width: 100%;
+  		display: flex;
+  		justify-content: center;
+  	}
+  	.quiz-container{
+  		background-color: white;
+  		width: 100rem;
+  		height: max-content;
+  		margin: 1rem 2rem;
+  		margin-top: 10rem;
+  		box-shadow: 0 0.2rem .5rem .2rem black;
+	  }
+	 .animate-box-shadow{
+		 animation: shadow 6s linear infinite;
+	 } 
+
+	  @keyframes shadow{
+		  0%{
+			box-shadow: 0 0.2rem .8rem .2rem #c0392b;
+		  }
+		  50%{
+			box-shadow: 0 0.2rem 1.2rem .2rem red;
+		  }
+		  100%{
+			box-shadow: 0 0.2rem .8rem .2rem darkred;
+		  }
+	  }
+  	
+  	.quiz-container .quiz-heading{
+  		font-size: 3.4rem; 
+  		font-weight: bold; 
+  		border-bottom: .3rem solid black;
+  		margin-bottom: 2rem;
+  	}
+  	#question-list{
+  		padding: 1rem;
+  		display: flex;
+  		flex-direction: column;
+  	}
+  	#question-list .options{
+  		position: relative;
+  	}
+
+  	#question-list .options .input-radio{
+  		opacity: 0;
+  		position: absolute;
+  		top: .9rem;
+  	}
+
+  	/*Custom Input Style*/
+	  	.options .checkmark {
+	  	 	 position: absolute;
+	  	 	 cursor: pointer;
+		     top: .8rem;
+		     left: 0;
+		     height: 2rem;
+		     width: 2rem;
+		     background-color: #dcdde1;
+		     border-radius: 50%;
+	  	}
+
+	  	.options:hover  .input-radio ~ .checkmark {
+			background-color: #bdc3c7;
+		}
+
+		.options .input-radio:checked ~ .checkmark {
+		  background-color: #0069d9;
+		}
+
+		.checkmark:after {
+		  content: "";
+		  position: absolute;
+		  display: none;
+		}
+
+		.options .input-radio:checked ~ .checkmark:after {
+		  display: block;
+		}
+
+		.options .checkmark:after {
+		 	top: 50%;
+	 	    left: 50%;
+	 	    width: .8rem;
+	 	    height: .8rem;
+	 	    border-radius: 50%;
+	 	    transform: translate(-50%,-50%);
+	 	    background: white;
+		}
+	/*End of Custom Input*/
+
+  	.option-text{
+  		position: relative;
+  		display: inline-block;
+  		left: 2.5rem;
+  	}
+
+  	#question-list .options .option-text,.input-radio{
+  		cursor: pointer;
+  	}
+  	.clear-option-btn{
+  		margin-top: 1rem;
+  		width: max-content;
+  		font-size: 1.8rem;
+  	}
+  	.submit-test-btn{
+	  	position: fixed;
+	    bottom: .5rem;
+	    right: 1rem;
+	    font-size: 2rem;
+	    padding: 0 1rem;
+	  }
+	  
+	  .take-me-up{
+		display: none;
+		position: fixed;
+		bottom: 5rem;
+		right: 0rem;
+		border-radius: 50%;
+		background: #f39c12;
+		opacity: .8;
+	}
+	  .take-me-up a .fa-arrow-up{
+		font-size: 3.8rem;
+		color: black;
+		padding: .3rem 1rem;
+		padding-top: 0px;
+		cursor: pointer;
+	  }
+
+@media(max-width: 998px)
+{
+	html
+	{
+		font-size: 58%;
+	}
+}
+
+@media(max-width: 768px)
+{
+	html
+	{
+		font-size: 55%;
+	}
+	
+}
+@media(max-width: 600px)
+{
+	html{
+		font-size: 50%;
+	}
+}
+@media(max-width: 450px)
+{
+	html{
+		font-size: 46%;
+	}
+}
+@media(max-width: 350px)
+{
+	html{
+		font-size: 42%;
+	}
+}

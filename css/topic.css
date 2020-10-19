@@ -1,0 +1,239 @@
+body {
+  background-color: #f3f7f7;
+}
+
+.parent-container {
+  padding-top: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+}
+
+.parent-container .topic-heading {
+  border-bottom: .25rem solid black;
+  font-family: 'Ubuntu', sans-serif;
+  text-transform: uppercase;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-weight: 600;
+  font-size: 3.4rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  letter-spacing: 0.3rem;
+  word-spacing: .8rem;
+}
+
+.parent-container .test-filter-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 5rem 0;
+  padding: 1rem;
+}
+
+.parent-container .test-filter-container .test-container .difficulty {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: .1rem solid #222f3e;
+  margin-bottom: 2rem;
+  background: #ffffff;
+  -webkit-box-shadow: 0 0 0.2rem 0.01rem #222f3e;
+          box-shadow: 0 0 0.2rem 0.01rem #222f3e;
+  width: 75rem;
+  -webkit-transition: linear .2s all;
+  transition: linear .2s all;
+  cursor: pointer !important;
+}
+
+.parent-container .test-filter-container .test-container .difficulty:hover {
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
+  background-color: #f3f7f7;
+  -webkit-box-shadow: 0 0 0.4rem 0.01rem #222f3e;
+          box-shadow: 0 0 0.4rem 0.01rem #222f3e;
+  cursor: pointer !important;
+}
+
+.parent-container .test-filter-container .test-container .difficulty .block-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.parent-container .test-filter-container .test-container .difficulty .block-heading h2 {
+  font-size: 2.5rem;
+  font-family: 'Noto Sans JP', sans-serif;
+  text-transform: uppercase;
+}
+
+.parent-container .test-filter-container .test-container .difficulty .block-heading .submit-btn, .parent-container .test-filter-container .test-container .difficulty .block-heading a {
+  border: .23rem solid #28a745;
+  font-size: 2rem;
+  color: #34495e;
+  width: 20rem;
+  border-radius: .9rem;
+}
+
+.parent-container .test-filter-container .test-container .difficulty .block-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.parent-container .test-filter-container .test-container .difficulty .block-footer span {
+  font-size: 1.8rem;
+}
+
+.parent-container .test-filter-container .test-container .difficulty .block-footer h3 {
+  font-family: 'Varela Round', sans-serif;
+}
+
+.parent-container .test-filter-container .filter-container {
+  width: 20rem;
+  height: 30rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  background: white;
+  -webkit-box-shadow: 0 0 0.5rem 0.1rem black;
+          box-shadow: 0 0 0.5rem 0.1rem black;
+  padding: 0 1rem;
+}
+
+.parent-container .test-filter-container .filter-container h2 {
+  font-size: 2.8rem;
+  font-weight: 600;
+  border-bottom: .25rem solid grey;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.parent-container .test-filter-container .filter-container form label {
+  font-size: 2.2rem;
+  cursor: pointer;
+}
+
+.parent-container .test-filter-container .filter-container form .btn-success {
+  font-size: 1.8rem;
+  margin-top: 2rem;
+}
+
+.parent-container .test-filter-container .filter-container form input {
+  cursor: pointer;
+}
+
+.parent-container .test-filter-container .filter-container form .filter-close-btn {
+  display: none;
+}
+
+.parent-container .test-filter-container .filter-btn-div {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .parent-container .test-filter-container {
+    padding: 0 10rem;
+  }
+  .parent-container .test-filter-container .test-container .difficulty {
+    width: 79rem;
+  }
+}
+
+@media (max-width: 998px) {
+  .parent-container .test-filter-container .test-container .difficulty {
+    width: 70rem;
+  }
+  .parent-container .test-filter-container .filter-container {
+    right: 2rem;
+  }
+}
+
+@media (max-width: 860px) {
+  .parent-container .test-filter-container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .parent-container .test-filter-container .filter-container {
+    display: none;
+    position: fixed;
+    top: 6.5rem;
+    height: 100%;
+    right: 0;
+    width: 20rem;
+    background: white;
+    -webkit-box-shadow: 0 0 .5rem .1rem black;
+            box-shadow: 0 0 .5rem .1rem black;
+    padding-left: 1rem;
+  }
+  .parent-container .test-filter-container .filter-container h2 {
+    font-weight: 600;
+    border-bottom: .2rem solid grey;
+    width: 100%;
+  }
+  .parent-container .test-filter-container .filter-container form .filter-close-btn {
+    display: block;
+  }
+  .parent-container .test-filter-container .filter-btn-div {
+    cursor: pointer;
+    display: block;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    border-radius: 50%;
+    background-color: #27ae60;
+    opacity: .9;
+  }
+  .parent-container .test-filter-container .filter-btn-div .fa-filter {
+    color: #f1f2f6;
+    font-size: 4rem;
+    padding: .5rem 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .parent-container .test-filter-container .test-container .difficulty {
+    width: 65rem;
+  }
+}
+
+@media (max-width: 530px) {
+  .parent-container .test-filter-container .test-container .difficulty {
+    width: 55rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .parent-container .test-filter-container .test-container .difficulty {
+    width: 45rem;
+  }
+}
+
+@media (max-width: 330px) {
+  .parent-container .test-filter-container .test-container .difficulty {
+    width: 40rem;
+  }
+}
+/*# sourceMappingURL=topic.css.map */

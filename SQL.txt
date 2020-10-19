@@ -1,0 +1,21 @@
+CREATE TABLE questions(
+question_id INTEGER AUTO_INCREMENT PRIMARY KEY,
+question_text text NOT NULL,
+option1 varchar(200),
+option2 varchar(200),
+option3 varchar(200),
+option4 varchar(200),
+correct_ans varchar(200),
+user_ans text    
+    
+
+);
+
+
+CREATE TABLE users(
+    user_id INTEGER AUTO_INCREMENT PRIMARY KEY,
+    user_name varchar(40) NOT NULL,
+    email varchar(40) NOT NULL,
+    pwd varchar(40) NOT NULL,
+	is_admin INTEGER NOT NULL
+);

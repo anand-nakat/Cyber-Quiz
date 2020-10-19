@@ -1,0 +1,159 @@
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url("../fonts/glyphicons-halflings-regular.eot");
+  src: url("../fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/glyphicons-halflings-regular.woff2") format("woff2"), url("../fonts/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Commissioner', sans-serif;
+  font-size: 2rem;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.glyphicon-fire:before {
+  content: "\e104";
+}
+
+.navbar a {
+  font-size: 2rem;
+  color: #dcdde1 !important;
+}
+
+.navbar a:hover {
+  color: orangered !important;
+}
+
+.navbar .navbar-brand {
+  font-size: 3rem;
+  letter-spacing: .9rem;
+  color: yellowgreen !important;
+  -webkit-transition: linear .3s all;
+  transition: linear .3s all;
+}
+
+.navbar .navbar-brand .glyphicon {
+  font-size: 3.1rem;
+}
+
+.navbar .navbar-brand:hover {
+  letter-spacing: 0rem;
+  color: orangered !important;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+main .instruction-container {
+  width: 45rem;
+  margin-top: 7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  color: #1e272e;
+  -webkit-box-shadow: 0 0 0.6rem 0.1rem black;
+          box-shadow: 0 0 0.6rem 0.1rem black;
+}
+
+main .instruction-container .instruction-heading {
+  font-size: 3.2rem;
+  font-weight: 600;
+  color: #B33771;
+  border-bottom: .25rem solid #1e272e;
+}
+
+main .instruction-container .test-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .instruction-container .test-details h2 {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+main .instruction-container .instructions h2 {
+  margin-bottom: 1rem;
+}
+
+main .instruction-container .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+main .instruction-container .form .submit-btn {
+  font-size: 1.8rem;
+}
+
+@media (max-width: 998px) {
+  html {
+    font-size: 58%;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 46%;
+  }
+}
+
+@media (max-width: 350px) {
+  html {
+    font-size: 42%;
+  }
+}
+/*# sourceMappingURL=instructions.css.map */

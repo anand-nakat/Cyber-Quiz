@@ -1,0 +1,30 @@
+main{
+    .result-container{
+        width: 40rem;
+        height: 35rem;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        color: #1e272e;
+        box-shadow: 0 0 0.6rem 0.1rem black;
+        border-radius: 2rem;
+        
+            .result-heading{
+                font-size: 3.2rem;
+                font-weight: 600;
+                color: #B33771;
+                border-bottom: .25rem solid #1e272e;
+            }
+
+            .links{
+                display: flex;
+                flex-direction: column;
+                    .btn
+                    {
+                        width: 15rem;
+                        font-size: 1.8rem;
+                    }
+            }
+
+    }
+}

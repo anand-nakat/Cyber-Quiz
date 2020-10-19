@@ -1,0 +1,255 @@
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+
+@font-face {
+	font-family: 'Glyphicons Halflings';
+  	src: url('../fonts/glyphicons-halflings-regular.eot');
+	src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+  }
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Commissioner', sans-serif;
+	font-weight: 600;
+}
+
+html{
+	font-size: 62.5%;
+}
+
+body{
+	height: 100vh;
+	color: #2d3436;
+	background-image: url('../img/bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	}
+
+	
+.glyphicon {
+	position: relative;
+	top: 1px;
+	display: inline-block;
+	font-family: 'Glyphicons Halflings';
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	}
+
+	.glyphicon-fire:before {
+	content: "\e104";
+	}
+	
+
+.navbar li a{
+	color: black;
+	font-size: 2.4rem;
+	padding-right: .2rem;
+}
+
+.navbar-light .navbar-nav .nav-link{
+	color: #000000d1;
+}
+
+.navbar-brand{
+	font-size: 3.8rem;
+	color: #ce1d1e !important;
+	letter-spacing: 0.8rem;
+	transition: linear .2s all;
+}
+.navbar-brand:hover{
+	color:black !important;
+	letter-spacing: 0;
+}
+
+.navbar-toggler{
+	font-size: 1.5rem;
+	background: #f05253;
+    border-radius: .6rem;
+}
+
+.main{
+	width: 100%;
+	height: 95vh;
+	display: flex;
+	color: black;
+	align-items: center;
+	justify-content: center;
+	
+}
+.quiz-img img{
+	width: 100%;
+	margin: 6rem;
+}
+
+.login-main{
+	display: flex;
+	color: black;
+	align-items: center;
+	justify-content: center;
+}
+
+.loginbox
+{
+color: #2d3436;
+text-align: center;
+padding: 0.6rem 0.8rem;
+
+}
+
+
+.loginbox h1
+{
+	width: max-content;	
+	border-bottom: 0.3rem solid #EF8182;
+	font-family: 'Ubuntu', sans-serif;
+    font-size: 4.8rem;
+    padding: 0rem 0rem;
+    text-align: center;
+  }
+
+
+.textbox
+{
+	width: 100%;
+	overflow: hidden;
+	font-size: 2rem;
+	padding: 0.5rem 0;
+	margin: 0.5rem 0;
+	display: flex;
+}
+
+::placeholder {
+  color:#485460;
+}
+
+.textbox input{
+	border: none;
+    outline: none;
+    background: none;
+    color: #2d3436;
+    width: auto;
+    font-size: 2.5rem;
+    float: left;
+    margin: .5rem .5rem;
+    padding-bottom: .8rem;
+    border-bottom: .25rem solid #646768;
+}
+
+.textbox input:focus{
+	border-color: #EF8182;
+}
+
+.textbox i{
+	font-size: 2.4rem;
+    width: 3rem;
+    text-align: center;
+    position: relative;
+    top: 1.5rem;
+    right: .4rem;
+    float: left;
+    padding: .4rem .1rem;
+    margin: 0rem;
+     
+}
+.btn{
+	width: 80%;
+    background-image: linear-gradient(to right, #EF8182, #f04041, #EF8182);
+    padding: .2rem;
+    background-size: 200%;
+    color: #2d3436;
+    font-size: 2.3rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 1.2rem 0;
+    border-radius: 1rem;
+    justify-content: center;
+    transition: linear all 0.3s;
+}
+
+.signup-btn{
+	background: transparent;
+	border: .2rem solid #e12c2e;
+}
+.signup-btn:hover{
+	border-color: black;
+}
+
+#error_message{
+	font-size: 2.1rem;
+	font-family: 'Commissioner', sans-serif;
+	color: #e1282a;
+	animation: error-display .4s ease-in-out 1;
+	margin-bottom: -2rem;
+	position: relative;
+	top: .8rem;
+}
+@keyframes error-display{
+	0%{
+		top: 0rem;
+		opacity: 0;
+	}
+	33%{
+		top: .3rem;
+		opacity: .33;
+	}
+
+	67%{
+		top: .6rem;
+		opacity: .67;
+	}
+
+	100%{
+		top: .8rem;
+		opacity: 1;
+	}
+}
+
+.btn:hover,.btn:active{
+	background-position: center right;
+}
+
+@media(max-width: 998px)
+{
+	html
+	{
+		font-size: 58%;
+	}
+}
+
+@media(max-width: 768px)
+{
+	html
+	{
+		font-size: 55%;
+	}
+	.navbar {
+		background-color:#6ef5ff7a;
+		border-bottom: solid .2rem #ce1d1e;
+    }
+
+
+	.img-fluid{
+		display: none;
+	}
+	
+}
+@media(max-width: 600px)
+{
+	html{
+		font-size: 52%;
+	}
+}
+
+@media(max-width: 350px)
+{
+	html{
+		font-size: 45%;
+	}
+}
+ 
