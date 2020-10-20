@@ -1,8 +1,9 @@
 <?php
  session_start();
+ date_default_timezone_set("Asia/Kolkata");
 require_once "pdo.php";
 require_once "links.php";
-$offset= $_SESSION['offset'];
+/*$offset= $_SESSION['offset'];
     if($_SESSION['offset']==0 || $_SESSION['offset']==15)
     {
         $stmt = $conn->prepare('SELECT correct_option FROM questions where topic= :t AND difficulty= :d LIMIT 15 OFFSET '.$offset);
@@ -24,14 +25,28 @@ $offset= $_SESSION['offset'];
                     $correct_ans++;
                 $attempted++;
             }        
-            
         }
+
         $percent=round(($correct_ans/$total_questions)*100);
         $score=$correct_ans*$_SESSION['marks'];
         $total_marks=$total_questions*$_SESSION['marks'];
+        $dt1=date("Y-m-d");
+        $dt2=date("H:i:s");
+
+        $stmt2 = $conn->prepare('INSERT INTO test_history (user_id,topic,difficulty,score,attempt_date,attempt_time)
+						VALUES ( :u, :t,:d, :s,:adate,:atime)');
+        $stmt2->execute(array(
+        ':u' => $_SESSION['user_id'],
+        ':t' => $_SESSION['topic'],
+        ':d' => $_SESSION['difficulty'],
+        ':s' => $percent,
+        ':adate' => $dt1,
+        ':atime' => $dt2));
+        
+        
     }
     else    
-        die("Something Wrong..");
+        die("Something Wrong.."); */
 ?>
 
 <!DOCTYPE html>
@@ -57,7 +72,7 @@ $offset= $_SESSION['offset'];
                 <a class="nav-link" href="index.php">Home</a>
             </li>
             <li class="nav-item pr-4">
-                <a class="nav-link" href="signup.php">Your Scores</a>
+                <a class="nav-link" href="score history.php">Attempt History</a>
             </li>
             <li class="nav-item pr-4">
                 <a class="nav-link" href="login.php">Log Out</a>
@@ -73,11 +88,12 @@ $offset= $_SESSION['offset'];
         result
     </h1>
     <div class="result mb-5">
-        <h2>Total Questions: <strong><?php echo($total_questions)?></strong></h2>
-        <h2>Attempted Questions: <strong><?php echo($attempted)?></strong></h2>
-        <h2>Correctly Answered: <strong><?php echo($correct_ans)?></strong></h2>
-        <h2>Total Score: <strong><?php echo($score.'/'.$total_marks)?></strong></h2>
-        <h2>Score Percentage: <strong><?php echo($percent.'%')?></strong></h2>
+        <h2>Total Questions: <strong><?php echo($_SESSION['total_questions'])?></strong></h2>
+        <h2>Attempted Questions: <strong><?php echo($_SESSION['attempted'])?></strong></h2>
+        <h2>Correctly Answered: <strong><?php echo($_SESSION['correct_ans'])?></strong></h2>
+        <h2>Total Score: <strong><?php echo($_SESSION['score'].'/'.$_SESSION['total_marks'])?></strong></h2>
+        <h2>Score Percentage: <strong><?php echo($_SESSION['percent'].'%')?></strong></h2>
+        
     </div>
     <div class="links">
         <form method="POST" action="validate_instructions.php">

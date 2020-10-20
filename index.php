@@ -71,7 +71,7 @@ session_start();
                         else{
                             echo'  
                             <li>
-                                <a href="logout.php">Your Scores</a>
+                                <a href="score history.php">Attempt History</a>
                             </li>
                             <li>
                                 <a href="logout.php">Logout</a>

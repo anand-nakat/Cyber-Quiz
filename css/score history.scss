@@ -1,0 +1,65 @@
+body{
+    background-color: #002050;
+}
+
+.parent-container{
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+        .page-heading
+        {
+            font-size: 2.9rem;
+            border-bottom: .12rem solid whitesmoke;
+            color: whitesmoke;
+            letter-spacing: .2rem;
+            text-transform: uppercase;
+            font-family: Raleway;
+        }
+        
+
+        .table-container
+        {
+            color:#CDDC39;
+            margin-top: 8rem;
+
+                table{
+                    color: inherit;
+                    border: .15rem solid whitesmoke;
+                    border-radius: 2rem;
+                        td,th{
+                            text-transform: capitalize;
+                            padding:  1.2rem .5rem;
+                            font-size: 1.8rem;
+                            text-align: center;
+                        }
+                        .row-heading{
+                            background-color: #9acd32 ;
+                            color: black;
+                        }
+                        .row-data{
+                            color: #9acd32;
+                            transition: linear .2s all ;
+                                &:hover{
+                                    background-color: #ced6e0;
+                                    color: black;
+                                    font-weight: bold;
+                                }
+                        }
+                        .row-topic{
+                            text-transform: uppercase;
+                        }
+                    }
+        }
+
+        .message{
+            position:absolute;
+             top:50%;
+            left:50%;
+            transform:translate(-50%,-50%);
+             font-size:2.4rem;
+            color:#9acd32;
+            text-align:center;
+        }
+}
