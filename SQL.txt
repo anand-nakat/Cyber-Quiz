@@ -7,8 +7,6 @@ option3 varchar(200),
 option4 varchar(200),
 correct_ans varchar(200),
 user_ans text    
-    
-
 );
 
 

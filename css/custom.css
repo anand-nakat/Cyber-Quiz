@@ -22,17 +22,19 @@ a:focus {
 }
 
 p {
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 1.5;
 }
 
 .navbar-header{
-    padding-bottom: 16px;
+    padding-bottom: 1.6rem;
 }
 .navbar-brand{
-    font-size: 35px;
+    font-size: 3.5rem;
 }
-
+.navbar-header .navbar-toggle{
+    font-size: 2rem;
+}
 header {
     position: relative;
     width: 100%;
@@ -45,75 +47,78 @@ header {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    /* background: #002050; */
 }
 
 header .header-content {
     position: relative;
     width: 100%;
-    padding: 100px 15px 70px;
+    padding: 8.0rem 1.5rem 7.0rem;
     text-align: center;
 }
 
 header .header-content .header-content-inner h1 {
     margin-top: 0;
-    margin-bottom: 20px;
-    font-size: 50px;
+    margin-bottom: 2.0rem;
+    font-size: 5.0rem;
     font-weight: 300;
 }
 
 header .header-content .header-content-inner p {
-    margin-bottom: 30px;
-    font-size: 16px;
+    margin-bottom: 3.0rem;
+    font-size: 1.6rem;
     font-weight: 300;
     color: rgba(255,255,255,.7);
 }
 
 @media(min-width:768px) {
     header {
-        min-height: 100%;
+        min-height: 80vh;
+        height: auto;
     }
 
     header .header-content {
         position: absolute;
         top: 50%;
-        padding: 0 50px;
+        padding: .0rem 5.0rem;
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
+        padding-top: 10.0rem;
         transform: translateY(-50%);
     }
 
     header .header-content .header-content-inner {
         margin-right: auto;
         margin-left: auto;
-        max-width: 1000px;
+        max-width: 100.0rem;
     }
 
 	header .header-content .header-content-inner h1 {
-    	font-size: 100px;
+    	font-size: 10.0rem;
 		}
 
     header .header-content .header-content-inner p {
         margin-right: auto;
         margin-left: auto;
         max-width: 80%;
-        font-size: 18px;
+        font-size: 1.8rem;
     }
 }
 
 .section-heading {
     margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 2.0rem;
 }
 
 .intro {
 	color: #fff;
     background-color: yellowgreen;
-    padding: 70px 0;
+    padding: 7.0rem 0;
     text-align: center;
 }
 
 .content {
-    padding: 100px 0;
+    padding: 10.0rem 0;
 }
 
 .content-2 {
@@ -122,7 +127,7 @@ header .header-content .header-content-inner p {
 }
 
 .content-3 {
-	padding: 20px 0 40px;
+	padding: 2.0rem 0 4.0rem;
 	text-align: center;
 }
 
@@ -133,27 +138,27 @@ header .header-content .header-content-inner p {
 .promo a:hover,
 .promo a:active {
     color: white;
-	text-shadow: 0px 0px 40px black;
+	text-shadow: .0rem .0rem 4.0rem black;
     text-decoration: none;
 }
 
 .promo-item {
-    height: 400px;
-    line-height: 180px;
+    height: 40.0rem;
+    line-height: 18.0rem;
     text-align: center;
-    border: 80px solid rgb(5,9,36);
+    border: 8.0rem solid rgb(5,9,36);
     transition: ease-out .25s all;
     cursor: pointer;
 }
 
 .promo-item:hover {
     background-size: 108%; 
-    border: 2px solid rgba(255,255,255,0.3);
-    line-height: 160px;
+    border: .2rem solid rgba(255,255,255,0.3);
+    line-height: 16.0rem;
 }
 
 .promo-item h3 {
-    font-size: 40px;
+    font-size: 4.0rem;
     display: inline-block;
     vertical-align: text-bottom;
 }
@@ -189,7 +194,8 @@ header .header-content .header-content-inner p {
 .item-5,
 .item-6 {
 	background-size: cover;
-	background-position: 50% 50%;
+    background-position: 50% 50%;
+    border-bottom: .2rem solid whitesmoke;
 	}
 
 .page-footer {
@@ -197,24 +203,24 @@ header .header-content .header-content-inner p {
 	}
 
 .page-footer .contact {
-	padding: 100px 0;
+	padding: 10.0rem 0;
 	background-color: yellowgreen;
 	color: #fff;
 	}
 
 .page-footer .contact p {
-	font-size: 22px;
+	font-size: 2.2rem;
 	font-weight: 300;
 	}
 	
 .content-3 .glyphicon,	
 .page-footer .contact .glyphicon {
-	font-size: 32px;
+	font-size: 3.2rem;
 	font-weight: 700;
 	}
 		
 .page-footer .small-print {
-	padding: 50px 0 40px;
+	padding: 5.0rem 0 4.0rem;
 	font-weight: 300;
 	}
 
@@ -229,11 +235,11 @@ header .header-content .header-content-inner p {
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
-    padding-top: 10px;
+    padding-top: 1.0rem;
 }
 
 .navbar-collapse ul{
-    margin: 16px 0;
+    margin: 1.6rem 0;
 }
 
 .navbar-default .navbar-header .navbar-brand {
@@ -248,7 +254,7 @@ header .header-content .header-content-inner p {
 .navbar-default .nav > li>a,
 .navbar-default .nav>li>a:focus {
     color: #fffafa;
-    font-size: 20px;
+    font-size: 2.0rem;
 }
 
 .navbar-default .nav > li>a:hover,
@@ -269,7 +275,7 @@ header .header-content .header-content-inner p {
 
 @media(max-width: 768px){
     .navbar-brand{
-        padding: 1rem;
+        padding: 1.1rem;
     }
 }
 
@@ -302,7 +308,7 @@ header .header-content .header-content-inner p {
     .navbar-default.affix {
         border-color: #fff;
         background-color: rgba(0, 0, 0, .7);
-        box-shadow: 0px 7px 20px 0px rgba(0,0,0,0.1);
+        box-shadow: .0rem .7rem 2.0rem 0rem rgba(0,0,0,0.1);
     }
 
     .navbar-default.affix .navbar-header .navbar-brand {
@@ -343,4 +349,39 @@ img::-moz-selection {
 
 .bg-primary {
     background-color: yellowgreen;
+}
+
+@media(max-width: 998px)
+{
+	html
+	{
+		font-size: 58%;
+	}
+}
+
+@media(max-width: 768px)
+{
+	html
+	{
+		font-size: 55%;
+	}
+	
+}
+@media(max-width: 600px)
+{
+	html{
+		font-size: 50%;
+	}
+}
+@media(max-width: 450px)
+{
+	html{
+		font-size: 46%;
+	}
+}
+@media(max-width: 350px)
+{
+	html{
+		font-size: 42%;
+	}
 }

@@ -49,10 +49,10 @@ if(isset($_SESSION['test-submitted']))
                 <a class="nav-link" href="index.php">Home</a>
             </li>
             <li class="nav-item pr-4">
-                <a class="nav-link" href="signup.php">Your Scores</a>
+                <a class="nav-link" href="score history.php">Attempt History</a>
             </li>
             <li class="nav-item pr-4">
-                <a class="nav-link" href="login.php">Log Out</a>
+                <a class="nav-link" href="logout.php">Log Out</a>
             </li>
         </ul>
     </div>

@@ -1,0 +1,78 @@
+body {
+  background-color: #002050;
+}
+
+.parent-container {
+  margin-top: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.parent-container .page-heading {
+  font-size: 2.9rem;
+  border-bottom: .12rem solid whitesmoke;
+  color: whitesmoke;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+  font-family: Raleway;
+}
+
+.parent-container .table-container {
+  color: #CDDC39;
+  margin-top: 8rem;
+}
+
+.parent-container .table-container table {
+  color: inherit;
+  border: .15rem solid whitesmoke;
+  border-radius: 2rem;
+}
+
+.parent-container .table-container table td, .parent-container .table-container table th {
+  text-transform: capitalize;
+  padding: 1.2rem .5rem;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.parent-container .table-container table .row-heading {
+  background-color: #9acd32;
+  color: black;
+}
+
+.parent-container .table-container table .row-data {
+  color: #9acd32;
+  -webkit-transition: linear .2s all;
+  transition: linear .2s all;
+}
+
+.parent-container .table-container table .row-data:hover {
+  background-color: #ced6e0;
+  color: black;
+  font-weight: bold;
+}
+
+.parent-container .table-container table .row-topic {
+  text-transform: uppercase;
+}
+
+.parent-container .message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 2.4rem;
+  color: #9acd32;
+  text-align: center;
+  font-family: ubuntu;
+}
+/*# sourceMappingURL=score history.css.map */

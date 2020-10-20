@@ -43,7 +43,7 @@ if(!isset($_SESSION['topic'])){
                 <a class="nav-link" href="signup.php">Your Scores</a>
             </li>
             <li class="nav-item pr-4">
-                <a class="nav-link" href="login.php">Log Out</a>
+                <a class="nav-link" href="logout.php">Log Out</a>
             </li>
         </ul>
     </div>
