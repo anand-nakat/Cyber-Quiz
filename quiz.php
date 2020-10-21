@@ -37,9 +37,9 @@ if(isset($_POST['start-test']) && isset($_POST['topic']) && isset($_POST['diffic
 					
 					else
 					{
-						$_SESSION['topic']=$_POST['topic'];
-						$_SESSION['difficulty']=$_POST['difficulty'];
-						$_SESSION['offset']=$_POST['offset'];
+						$_SESSION['topic']=htmlentities($_POST['topic']);
+						$_SESSION['difficulty']=htmlentities($_POST['difficulty']);
+						$_SESSION['offset']=htmlentities($_POST['offset']);
 						
 					}	
 				}
@@ -79,7 +79,7 @@ else
 	<div class="quiz-container p-4">
 		<!-- QUIZ HEADING -->
 		<h1 class="quiz-heading">
-			Quiz on C++
+			Quiz on <?php echo($_SESSION['topic']);?>
 		</h1>
 		<!-- FORM -->
 		<form action="attempt_history.php" method="POST">
@@ -92,7 +92,7 @@ else
 				<div id="question-list" class="py-3">
 					<!-- QUESTION -->
 					<div class="question">
-						<h2 class="font-weight-bold"> <?php echo($row_num+'1'.". ".$row[$row_num]['question_text']); ?></h2>
+						<h2 class="font-weight-bold"> <?php echo($row_num+'1'.". ".htmlentities($row[$row_num]['question_text'])); ?></h2>
 					</div>
 					
 					<?php
@@ -108,7 +108,7 @@ else
 						<span class="checkmark"></span>
 						<!-- OPTION TEXT -->
 						<span class="option-text">
-							<?php echo($option_list[$option_num].$row[$row_num]['option'.$option_num]); ?>
+							<?php echo($option_list[$option_num].htmlentities($row[$row_num]['option'.$option_num])); ?>
 						</span> 
 					</div>
 					<!-- OPTIONS -->

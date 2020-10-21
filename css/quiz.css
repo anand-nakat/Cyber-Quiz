@@ -18,6 +18,9 @@
 		font-size: 62.5%;
 		scroll-behavior: smooth;
 	}
+	body{
+		background-color: #f5f6fa;
+	}
 
 	.glyphicon {
 		position: relative;
@@ -61,7 +64,6 @@
 
 
   	.parent-container{
-  		background-color: #f5f6fa;
   		width: 100%;
   		display: flex;
   		justify-content: center;

@@ -54,7 +54,7 @@ session_start();
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="nav navbar-nav navbar-right" style="">
                     <li class="active">
-                        <a href="#">Home</a>
+                        <a href="index.php">Home</a>
                     </li>
                     <?php
                         if(!isset($_SESSION['login']))
