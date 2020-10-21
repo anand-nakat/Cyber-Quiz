@@ -1,5 +1,9 @@
 <?php
 session_start();
+if(isset($_SESSION['test-submitted']))
+    {
+        unset($_SESSION['test-submitted']);
+    }
 
 ?>
 
@@ -52,7 +56,7 @@ session_start();
             </div>
             <!-- Navbar links -->
             <div class="collapse navbar-collapse" id="navbar">
-                <ul class="nav navbar-nav navbar-right" style="">
+                <ul class="nav navbar-nav navbar-right">
                     <li class="active">
                         <a href="index.php">Home</a>
                     </li>
@@ -71,7 +75,7 @@ session_start();
                         else{
                             echo'  
                             <li>
-                                <a href="score history.php">Attempt History</a>
+                                <a href="attempt history.php">Attempt History</a>
                             </li>
                             <li>
                                 <a href="logout.php">Logout</a>

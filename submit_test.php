@@ -21,8 +21,11 @@ $offset= $_SESSION['offset'];
             if(isset($_POST["Question".$i."-Option"]))
             {
                 if($_POST["Question".$i."-Option"]==$row[$i]['correct_option'])
+                {
                     $correct_ans++;
+                } 
                 $attempted++;
+                $_SESSION['Question'.$i.'-Option']=$_POST["Question".$i."-Option"];
             }        
         }
 

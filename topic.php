@@ -40,7 +40,7 @@ if(!isset($_SESSION['topic'])){
                 <a class="nav-link" href="index.php">Home</a>
             </li>
             <li class="nav-item pr-4">
-                <a class="nav-link" href="signup.php">Your Scores</a>
+                <a class="nav-link" href="attempt history.php">Attempt History</a>
             </li>
             <li class="nav-item pr-4">
                 <a class="nav-link" href="logout.php">Log Out</a>

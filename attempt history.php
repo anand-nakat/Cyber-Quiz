@@ -3,9 +3,13 @@ session_start();
 require_once "pdo.php";
 require_once "links.php";
 
+if(!isset($_SESSION['login'])){
+    die("User Not Logged In");
+}
+
 if(isset($_SESSION['user_id']))
 {
-    $stmt=$conn->prepare("SELECT * FROM test_history WHERE user_id=:uid");
+    $stmt=$conn->prepare("SELECT * FROM test_history WHERE user_id=:uid ORDER BY attempt_date DESC");
     $stmt->execute(array(":uid"=>$_SESSION['user_id']));
     $row=$stmt->fetchAll(PDO::FETCH_ASSOC);
 }

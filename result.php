@@ -29,7 +29,7 @@ require_once "links.php";
                 <a class="nav-link" href="index.php">Home</a>
             </li>
             <li class="nav-item pr-4">
-                <a class="nav-link" href="score history.php">Attempt History</a>
+                <a class="nav-link" href="attempt history.php">Attempt History</a>
             </li>
             <li class="nav-item pr-4">
                 <a class="nav-link" href="logout.php">Log Out</a>
@@ -60,6 +60,7 @@ require_once "links.php";
             <input type="submit" class="btn btn-info mx-auto mt-2 text-center" value="Attempt Again" style="position: relative;left: 50%;transform: translateX(-50%);">
         </form>
         <button class="btn btn-success mx-auto mt-2 text-center" onclick="window.location.href='index.php'">Explore More</button>
+        <button class="btn mx-auto mt-2 text-center" style="background:#b33771;color:white" onclick="window.location.href='review.php'">Review Test</button>
     </div>
 </div>
 

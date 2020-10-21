@@ -82,7 +82,7 @@ else
 			Quiz on <?php echo($_SESSION['topic']);?>
 		</h1>
 		<!-- FORM -->
-		<form action="attempt_history.php" method="POST">
+		<form action="submit_test.php" method="POST">
 			<?php
 			$option_list=array(1=>"a). ", 2=>"b). ", 3=>"c). ",4=>"d). ");
 				for($row_num=0;$row_num<count($row);$row_num++)
