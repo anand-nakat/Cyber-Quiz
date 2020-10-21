@@ -49,7 +49,7 @@ if(isset($_SESSION['test-submitted']))
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="home.php">
                 	<span class="glyphicon glyphicon-fire"></span> 
                 	Quizxx
                 </a>

@@ -80,7 +80,6 @@ else{
 		<!-- QUIZ HEADING -->
 		<h1 class="quiz-heading">
 			Review on <?php echo($_SESSION['topic']);?>
-			<?php echo($_SESSION['Question0-Option']);?>
 		</h1>
 		
 		<div class="color-scheme d-flex my-2 mb-3">
