@@ -9,7 +9,7 @@ if(!isset($_SESSION['login'])){
 
 if(isset($_SESSION['user_id']))
 {
-    $stmt=$conn->prepare("SELECT * FROM test_history WHERE user_id=:uid ORDER BY attempt_date DESC");
+    $stmt=$conn->prepare("SELECT * FROM test_history WHERE user_id=:uid ORDER BY attempt_date DESC, attempt_time DESC");
     $stmt->execute(array(":uid"=>$_SESSION['user_id']));
     $row=$stmt->fetchAll(PDO::FETCH_ASSOC);
 }

@@ -18,6 +18,11 @@ $offset= $_SESSION['offset'];
 
         for($i=0;$i<$total_questions;$i++)
         {
+            if(isset($_SESSION['Question'.$i.'-Option']))
+            {
+                unset($_SESSION['Question'.$i.'-Option']);
+            }
+            
             if(isset($_POST["Question".$i."-Option"]))
             {
                 if($_POST["Question".$i."-Option"]==$row[$i]['correct_option'])
