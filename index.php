@@ -4,7 +4,9 @@ if(isset($_SESSION['test-submitted']))
     {
         unset($_SESSION['test-submitted']);
     }
-
+if(isset($_SESSION['topic'])){
+    unset($_SESSION['topic']);
+}
 ?>
 
 
@@ -142,7 +144,7 @@ if(isset($_SESSION['test-submitted']))
 				</div>
         
 				<div class="col-md-6 promo-item item-6">
-                    <form method="POST" style="visibility:hidden" action="topic.php">
+                    <form method="POST" style="visibility:hidden" action="validate_topic.php">
                         <input type="hidden" name="topic" value="python">	
                     </form>
 				</div>
