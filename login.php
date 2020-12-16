@@ -109,6 +109,10 @@ header("Location: index.php");
 				
 			</div>
 
+			<a href="change-password.php"><h2 style="text-align: right;
+    color: #ce2425;
+    font-weight: 600;text-decoration:none">Change Password</h2></a>
+
 			<input type="submit" class="btn" name="submit" value="Sign In">
 		</form>
 
